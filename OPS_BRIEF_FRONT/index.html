@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ops Brief AI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo-wrap">
+          <img
+            src="https://pierluigicherchi.com/assets/plc-logo.svg"
+            alt="Pier Luigi Cherchi logo"
+            class="brand-logo"
+          />
+        </div>
+
+        <div class="brand-copy">
+          <h1>Ops Brief AI</h1>
+          <p>Operational intelligence workspace</p>
+        </div>
+      </div>
+
+      <div class="panel glass">
+        <div class="section-label">Request Lookup</div>
+        <label for="requestId">Request ID</label>
+        <input id="requestId" type="text" placeholder="REQ-2026-003" />
+        <button id="generateBtn">Generate Brief</button>
+      </div>
+
+      <div class="panel glass compact">
+        <div class="section-label">Live Status</div>
+
+        <div class="meta-row">
+          <span>System</span>
+          <span id="statusBadge" class="badge neutral">Idle</span>
+        </div>
+
+        <div class="meta-row">
+          <span>Priority</span>
+          <span id="priorityBadge" class="badge neutral">--</span>
+        </div>
+
+        <div class="meta-row">
+          <span>Source</span>
+          <span id="sourceBadge" class="badge neutral">--</span>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        Prototype by Pier Luigi Cherchi
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero glass">
+        <div class="hero-animated-line">
+          <div class="plane-trail"></div>
+          <div class="plane">✈</div>
+        </div>
+
+        <div class="hero-content">
+          <div class="eyebrow">Operations Overview</div>
+          <h2 id="heroTitle" class="hero-title">Ops Brief AI</h2>
+          <p id="heroSubtitle">Enter a request ID to generate a structured operational brief.</p>
+        </div>
+      </section>
+
+      <section class="details-grid">
+        <article class="card glass">
+          <div class="card-header">
+            <h3>Request Details</h3>
+          </div>
+          <div class="card-body details-grid-inner">
+            <div class="detail-item">
+              <span class="detail-label">Client</span>
+              <span id="clientValue" class="detail-value">--</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Route</span>
+              <span id="routeValue" class="detail-value">--</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Aircraft</span>
+              <span id="aircraftValue" class="detail-value">--</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Alternate</span>
+              <span id="alternateValue" class="detail-value">--</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Current Status</span>
+              <span id="currentStatusValue" class="detail-value">--</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Updated</span>
+              <span id="updatedAtValue" class="detail-value">--</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="cards-grid">
+        <article class="card glass summary-card">
+          <div class="card-header">
+            <h3>Operational Summary</h3>
+          </div>
+          <div id="summaryBox" class="card-body muted">
+            No summary available yet.
+          </div>
+        </article>
+
+        <article class="card glass">
+          <div class="card-header">
+            <h3>Risks</h3>
+          </div>
+          <div class="card-body">
+            <ul id="risksList" class="item-list empty">
+              <li>No risks loaded.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card glass">
+          <div class="card-header">
+            <h3>Next Actions</h3>
+          </div>
+          <div class="card-body">
+            <ul id="actionsList" class="item-list empty">
+              <li>No next actions loaded.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

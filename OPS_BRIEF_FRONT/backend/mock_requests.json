@@ -1,0 +1,119 @@
+{
+  "REQ-2026-001": {
+    "status": "ok",
+    "priority": "medium",
+    "request_id": "REQ-2026-001",
+    "client": "Artemis Holdings Ltd",
+    "aircraft": "9H-JPC (Citation XLS+)",
+    "route": "LIML → LFQQ → EBBR",
+    "pax": 4,
+    "departure": "2026-03-18 06:30Z",
+    "revenue_eur": 18500,
+    "summary": "Flight LIML → LFQQ → EBBR for Artemis Holdings (9H-JPC Citation XLS+, 4 pax, €18,500). Departure 2026-03-18 at 06:30Z. First leg fully confirmed. Second leg has parking unconfirmed at EBBR and ground transport pending. VIP client — requires close monitoring.",
+    "risks": [
+      "[MEDIUM] Parking not confirmed at EBBR",
+      "[MEDIUM] Ground transport pending confirmation at EBBR arrival",
+      "[LOW] VIP client — any delay will have reputational impact"
+    ],
+    "next_actions": [
+      "Confirm parking at EBBR — contact Luxaviation",
+      "Follow up ground transport provider for EBBR arrival",
+      "Verify Wi-Fi system operational on 9H-JPC before departure",
+      "Brief crew on VIP client requirements"
+    ]
+  },
+
+  "REQ-2026-002": {
+    "status": "ok",
+    "priority": "low",
+    "request_id": "REQ-2026-002",
+    "client": "Nordström Family Office",
+    "aircraft": "9H-VCG (Global 6000)",
+    "route": "LFPB → LGAV",
+    "pax": 3,
+    "departure": "2026-03-18 08:00Z",
+    "revenue_eur": 42000,
+    "summary": "Flight LFPB → LGAV for Nordström Family Office (9H-VCG Global 6000, 3 pax, €42,000). Departure 2026-03-18 at 08:00Z. All operational items confirmed — handling, fuel, parking, slot, permits, catering. Green status across the board. Helicopter transfer to Mykonos managed separately.",
+    "risks": [
+      "[LOW] Nut allergy flagged — verify catering compliance before boarding",
+      "[LOW] Pet onboard — ensure travel documents accessible for inspection"
+    ],
+    "next_actions": [
+      "Monitor — no immediate actions required",
+      "Double-check catering nut-free compliance with provider",
+      "Confirm helicopter transfer booking REF-HEL-044 is on schedule"
+    ]
+  },
+
+  "REQ-2026-003": {
+    "status": "ok",
+    "priority": "critical",
+    "request_id": "REQ-2026-003",
+    "client": "Falcon Industries DMCC",
+    "aircraft": "OE-GVA (Gulfstream G280)",
+    "route": "EHAM → OMDB",
+    "pax": 6,
+    "departure": "2026-03-18 14:00Z",
+    "revenue_eur": 67000,
+    "summary": "ATTENTION REQUIRED — Flight EHAM → OMDB for Falcon Industries DMCC (OE-GVA Gulfstream G280, 6 pax, €67,000). Departure 2026-03-18 at 14:00Z. 5 issues identified, 3 critical. UAE landing permit not received — departure at risk. FO passport validity below UAE 6-month requirement. Immediate escalation needed.",
+    "risks": [
+      "[CRITICAL] UAE landing permit not received — departure at risk",
+      "[CRITICAL] FO passport expires in 5 months — UAE requires 6 months minimum",
+      "[CRITICAL] Overflight permits incomplete — UAE segment not cleared",
+      "[HIGH] Fuel not confirmed at OMDB",
+      "[MEDIUM] Passenger manifest pending — security detail names TBC"
+    ],
+    "next_actions": [
+      "IMMEDIATE: Escalate UAE landing permit — contact agent and ops control",
+      "IMMEDIATE: Assess FO passport situation — consider crew swap if not resolvable",
+      "URGENT: Follow up overflight permit for UAE segment",
+      "Confirm fuel at OMDB — contact ExecuJet DXB",
+      "Request security detail names from client for passenger manifest",
+      "Coordinate diplomatic pouch customs pre-clearance at OMDB"
+    ]
+  },
+
+  "REQ-2026-004": {
+    "status": "ok",
+    "priority": "low",
+    "request_id": "REQ-2026-004",
+    "client": "— Repositioning —",
+    "aircraft": "9H-FLX (Challenger 350)",
+    "route": "LSGG → LIML",
+    "pax": 0,
+    "departure": "2026-03-18 16:00Z",
+    "revenue_eur": 0,
+    "summary": "Repositioning flight LSGG → LIML (9H-FLX Challenger 350, 0 pax). Departure 2026-03-18 at 16:00Z. Standard repo for tomorrow's LIML-LEMD charter. All items confirmed — handling, fuel, parking. No action required.",
+    "risks": [
+      "[LOW] No risks identified — standard repositioning flight"
+    ],
+    "next_actions": [
+      "Monitor — no immediate actions required",
+      "Confirm tomorrow's LIML-LEMD charter setup is on track"
+    ]
+  },
+
+  "REQ-2026-005": {
+    "status": "ok",
+    "priority": "medium",
+    "request_id": "REQ-2026-005",
+    "client": "BluePeak Capital",
+    "aircraft": "9H-AMR (Phenom 300E)",
+    "route": "LIML → LSZH → LIML",
+    "pax": 2,
+    "departure": "2026-03-18 17:30Z",
+    "revenue_eur": 12800,
+    "summary": "Flight LIML → LSZH → LIML for BluePeak Capital (9H-AMR Phenom 300E, 2 pax, €12,800). Currently in QUOTE stage — Avinode quote #AVN-38291 sent, awaiting client response. Deadline today at 14:00. Nothing confirmed yet — crew not assigned, handling and fuel not requested. If client confirms, fast-track setup required.",
+    "risks": [
+      "[MEDIUM] Quote response deadline today at 14:00 — risk of expiry",
+      "[MEDIUM] Crew not assigned — need immediate assignment if confirmed",
+      "[LOW] No handling, fuel, or parking requested — all pending client confirmation"
+    ],
+    "next_actions": [
+      "Monitor Avinode for client response before 14:00 deadline",
+      "Pre-identify available crew for 9H-AMR in case of confirmation",
+      "Prepare handling and fuel requests as drafts — ready to send on confirmation",
+      "Clarify catering preference with client (quoted with and without)"
+    ]
+  }
+}

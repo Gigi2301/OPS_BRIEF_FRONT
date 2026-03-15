@@ -1,0 +1,12 @@
+REQ-2026-001 (medium — parking pending)
+REQ-2026-002 (low — tutto green)
+REQ-2026-003 (critical — il tuo)
+REQ-2026-004 (low — repo)
+REQ-2026-005 (medium — quoting)
+
+
+
+token:
+
+
+IFhdMwouScFkbbpKZEC6nxqXKHyRf9mm
