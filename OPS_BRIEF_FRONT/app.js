@@ -19,6 +19,8 @@ const alternateValue = document.getElementById("alternateValue");
 const currentStatusValue = document.getElementById("currentStatusValue");
 const updatedAtValue = document.getElementById("updatedAtValue");
 
+const API_BASE = "https://ops-brief-front.onrender.com";
+
 function setBadge(element, value) {
   element.textContent = value || "--";
   element.className = "badge";
@@ -147,7 +149,7 @@ function renderLoading(requestId) {
 }
 
 async function fetchBrief(requestId) {
-  const response = await fetch("http://127.0.0.1:8001/api/brief", {
+  const response = await fetch(`${API_BASE}/api/brief`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -158,6 +160,11 @@ async function fetchBrief(requestId) {
   });
 
   const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || `HTTP ${response.status}`);
+  }
+
   return data;
 }
 
@@ -176,7 +183,7 @@ async function handleGenerateBrief() {
 
     renderBrief(data, requestId);
   } catch (error) {
-    renderError("Backend not reachable.", requestId);
+    renderError(error.message || "Backend not reachable.", requestId);
   }
 }
 
