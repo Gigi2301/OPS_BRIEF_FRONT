@@ -19,7 +19,7 @@ const alternateValue = document.getElementById("alternateValue");
 const currentStatusValue = document.getElementById("currentStatusValue");
 const updatedAtValue = document.getElementById("updatedAtValue");
 
-const API_BASE = "https://api.pierluigicherchi.com";
+const API_BASE = "https://ops-brief-front.onrender.com";
 
 function setBadge(element, value) {
   element.textContent = value || "--";
